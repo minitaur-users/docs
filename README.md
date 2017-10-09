@@ -6,4 +6,4 @@ In addition to creating pages for specific topics, please use the "Issues" featu
 
 ## Topic List
 
-1. (Software Setup)[Minitaur software setup.txt]
+1. [Software Setup](./Minitaur%20software%20setup.txt)

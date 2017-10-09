@@ -1,0 +1,36 @@
+These steps will set up your computer to compile and upload code onto the Minitaur.
+
+1. Download Arduino 1.6.1 for your OS from https://www.arduino.cc/en/Main/OldSoftwareReleases#previous - make sure the arduino folder (the one that has arduino-1.6.1 in it, not the one called "Arduino" which is mostly empty and we won't use) is in your Documents folder.
+
+2. Make sure you have some sort of Git client (e.g. GitHub Desktop, SourceTree). If you don't, download SourceTree here - https://www.sourcetreeapp.com/. You don't need an Atlassian account or to import any repositories, so skip any setup related to that.
+
+3. Clone the Koduino repository (https://github.com/avikde/koduino.git) into the hardware folder within arduino so that Documents/arduino-1.6.1-windows/arduino-1.6.1/hardware/koduino is a valid path (or the equivalent on a Mac). This repository allows the arduino IDE to communicate with the specific microcontroller aboard the Minitaur
+
+4. Clone the Minitaur repository (https://github.com/robomechanics/Minitaur.git) into your Documents folder. This folder contains the Minitaur specific code, such as the behaviors, communication, and motor controller libraries.
+
+5. Open Minitaur/minitaur_gaits_pp/minitaur_gaits_pp.ino, (it should open within Arduino). Set the following preferences in Arduino:
+	File->Preferences-> Make sure "Sketchbook location" is the path to Documents/Minitaur
+	File->Preferences-> check  "Display line numbers" (optional, but you'll want it)
+	Tools->Board->F303V(...)
+	Tools->CPU Speed->72MHz
+	Tools->Bootloader->stm32ld
+Restart Arduino, then reopen minitaur_gaits_pp.ino. Click the check mark in the upper left labelled "Verify". This should compile the code. Make sure it compiles before moving on.
+
+6. Plug in the minitaur via USB. Make sure Tools->Port has a new option when you plug the minitaur in, and select that option. Click the -> in the upper left corner labelled "Upload". Follow the instructions below depending on what it says after it compiles
+	1) "Programming flash" followed by a progress bar - Hooray, you're done!
+	2) Something about unable to connect to COM1 (or another number) - either you don't have the right port selected, or your computer can't detect something is plugged in for some reason.
+	3) "Unable to connect to bootloader" - This is the most likely response, and happend because there are issues with the stm32ld loader. If you get this, do the following
+		a. In Arduino, select Tools->bootloader->stm32loader
+		b. Make sure you have both python2.7 and pip installed (if you have neither, follow the instructions 1-7 under "Using Python" at http://avikde.me/koduino/html/class_open_log.html).
+		c. In the command line, enter: pip install pyserial progressbar
+		d. Try uploading again
+
+Common Errors
+If Tools->Port is greyed out, make sure Tools->Board is set to F303V...
+When compiling:
+	- If "AbstractMotor.h" isn't found, make sure your sketchbook location is set to .../Documents/Minitaur
+	- If "nvic.h" is not found, make sure Tools->Board is set to F303V...
+
+When uploading:
+	- If you get a "unable to connect to bootloader" error, follow 6.3 above
+	- If you get some error that says something about COM1 or any other number, try restarting Arduino and making sure that Tools->Port has a new option when you plug in the minitaur

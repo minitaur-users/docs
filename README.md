@@ -2,7 +2,7 @@
 
 Use this repository to document anything you think other users of Minitaur would want to know. 
 
-In addition to creating pages for specific topics, please use the "Issues" feature to start discussions with other users. We suggest changing this repository to "Watch" so you can be notified of new discussions.
+In addition to creating pages for specific topics, please use the "[Issues](https://github.com/minitaur-users/docs/issues)" feature to start discussions with other users. We suggest changing this repository to "Watch" so you can be notified of new discussions.
 
 ## Topic List
 

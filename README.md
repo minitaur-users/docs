@@ -6,4 +6,15 @@ In addition to creating pages for specific topics, please use the "[Issues](http
 
 ## Topic List
 
-1. [Software Setup](./Minitaur%20software%20setup.txt)
+Here are some topics that are documented in this repo:
+
+* [Software Setup](./Minitaur%20software%20setup.txt)
+
+## Other Repositories
+
+Here are some other repositories that Minitaur users may want:
+
+* [Getting Started](https://gitlab.com/ghostrobotics/docs/wikis/getting-started), from Ghost Robotics
+* [Programming Guide](https://gitlab.com/ghostrobotics/docs/wikis/programming), from Ghost Robotics
+* [Models](https://github.com/minitaur-users/models) of the robot, including URDFs
+

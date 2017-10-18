@@ -1,0 +1,11 @@
+How to create a behavior:
+
+How to print values to serial:
+
+How to ...
+
+minitaur_gaits file descriptions:
+minitaur_gaits.ino:
+HAL.cpp:
+HAL.h:
+...

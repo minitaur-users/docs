@@ -10,6 +10,7 @@ These steps will set up your computer to compile and upload code onto the Minita
 4. Clone the Minitaur repository (https://github.com/robomechanics/Minitaur.git) into your Documents folder. This folder contains the Minitaur specific code, such as the behaviors, communication, and motor controller libraries.
 
 5. Open Minitaur/minitaur_gaits_pp/minitaur_gaits_pp.ino, (it should open within Arduino). Set the following preferences in Arduino:
+	LEG ZEROS: Make sure the correct zeros are selected in the code for your individual robot
 	File->Preferences-> Make sure "Sketchbook location" is the path to Documents/Minitaur
 	File->Preferences-> check  "Display line numbers" (optional, but you'll want it)
 	Tools->Board->F303V(...)

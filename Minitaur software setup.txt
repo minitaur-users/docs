@@ -1,9 +1,10 @@
 These steps will set up your computer to compile and upload code onto the Minitaur.
 
 1. Download Arduino 1.6.1 for your OS from https://www.arduino.cc/en/Main/OldSoftwareReleases#previous - make sure the arduino folder (the one that has arduino-1.6.1 in it, not the one called "Arduino" which is mostly empty and we won't use) is in your Documents folder.
-
+	WINDOWS: It is probably easier to not use the "installer". If you do, and install it to "Program Files", you will have to go in and fix the permissions on the hardware folder to do step 3.
+	
 2. Make sure you have some sort of Git client (e.g. GitHub Desktop, SourceTree). If you don't, download SourceTree here - https://www.sourcetreeapp.com/. You don't need an Atlassian account or to import any repositories, so skip any setup related to that.
-
+	
 3. Clone the Koduino repository (https://github.com/avikde/koduino.git) into the hardware folder within arduino so that Documents/arduino-1.6.1-windows/arduino-1.6.1/hardware/koduino is a valid path (or the equivalent on a Mac). This repository allows the arduino IDE to communicate with the specific microcontroller aboard the Minitaur
 
 4. Clone the Minitaur repository (https://github.com/robomechanics/Minitaur.git) into your Documents folder. This folder contains the Minitaur specific code, such as the behaviors, communication, and motor controller libraries.
@@ -34,3 +35,5 @@ When compiling:
 When uploading:
 	- If you get a "unable to connect to bootloader" error, follow 6.3 above
 	- If you get some error that says something about COM1 or any other number, try restarting Arduino and making sure that Tools->Port has a new option when you plug in the minitaur
+	- If Windows does not recognize the serial port when you plug the robot in (especially Windows 7), download the driver from FTDI: http://www.ftdichip.com/Drivers/VCP.htm
+	- If you get a python error, first make sure python is installed (https://www.python.org/downloads/release/python-2714/), then make sure you follow the pip install command in 6.3

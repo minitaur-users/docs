@@ -14,7 +14,7 @@ Here are some topics that are documented in this repo:
 
 Here are some other repositories that Minitaur users may want:
 
-* [Getting Started](https://gitlab.com/ghostrobotics/docs/wikis/getting-started), from Ghost Robotics
-* [Programming Guide](https://gitlab.com/ghostrobotics/docs/wikis/programming), from Ghost Robotics
+* [Getting Started](http://ghostrobotics.gitlab.io/SDK/Minitaur.html#getting-started), from Ghost Robotics
+* [SDK Documentation](http://ghostrobotics.gitlab.io/SDK/index.html), from Ghost Robotics
 * [Models](https://github.com/minitaur-users/models) of the robot, including URDFs
 

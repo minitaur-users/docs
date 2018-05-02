@@ -9,6 +9,7 @@ In addition to creating pages for specific topics, please use the "[Issues](http
 Here are some topics that are documented in this repo:
 
 * [Old Software Setup](./Minitaur%20software%20setup.txt)
+* [Motor Model](./Minitaur%20Motor%20Model.pdf)
 
 ## Other Repositories
 

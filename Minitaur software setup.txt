@@ -1,3 +1,5 @@
+NOTE: THESE STEPS ARE FOR THE OLD CODEBASE, NOT THE SDK.
+
 These steps will set up your computer to compile and upload code onto the Minitaur.
 
 1. Download Arduino 1.6.1 for your OS from https://www.arduino.cc/en/Main/OldSoftwareReleases#previous - make sure the arduino folder (the one that has arduino-1.6.1 in it, not the one called "Arduino" which is mostly empty and we won't use) is in your Documents folder.
